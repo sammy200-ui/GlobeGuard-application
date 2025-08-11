@@ -5,7 +5,7 @@ GlobeGuard – Global Scam Awareness & Reporting App
 
 ---
 
-## 2. Your Name & Roll Number
+## 2. Name & Roll Number
 Sameer Pawar – [2024-B-14082005]
 
 ---
