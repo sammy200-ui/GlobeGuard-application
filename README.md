@@ -1,12 +1,10 @@
-# Project Idea Submission
 
-## 1. Project Title
-GlobeGuard – Global Scam Awareness & Reporting App
+## GlobeGuard – Global Scam Awareness & Reporting App
 
 ---
 
 ## 2. Name & Roll Number
-Sameer Pawar – [2024-B-14082005]
+## Sameer Pawar – [2024-B-14082005]
 
 ---
 
