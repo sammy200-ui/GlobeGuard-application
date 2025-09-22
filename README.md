@@ -60,8 +60,3 @@ A fully functional **mobile app** that:
 
 ---
 
-## 9. Timeline (Optional)
-**Week 1–2:** Research APIs, design UI/UX, finalize features.  
-**Week 3–4:** Build frontend in React Native & integrate Firebase backend.  
-**Week 5–6:** Add location-based alerts, push notifications, and map view.  
-**Week 7:** Testing, bug fixes, and deployment to Google Play Store & App Store.
