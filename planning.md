@@ -1,19 +1,19 @@
 # Scam Awareness App
 
-A mobile-first application built with **React Native (Expo)** for the frontend and **Node.js + Express + MongoDB** for the backend.  
+A mobile-first application built with **React Native (Expo)** for the frontend and **Firebase** for the backend.  
 The app helps users stay aware of scams happening around the world, check scams by location, and report new ones.  
 Login/Signup is supported for personalization and bookmarking.
 
 ---
 
-## 📱 App Screen Plan
+## App Screen Plan
 
 ### 1. Home Screen (Trending Scams)
 - Shows trending scams (latest + most reported).
 - Feed-style list (card per scam).
 - Filter by type (Online, Travel, Finance, Other).
 - **CTA:** “Report Scam” (floating button or header option).
-- ✅ **Purpose:** Quick glance at what’s happening worldwide.
+- **Purpose:** Quick glance at what’s happening worldwide.
 
 ---
 
@@ -22,7 +22,7 @@ Login/Signup is supported for personalization and bookmarking.
 - Enter a city/region OR tap on a map pin.
 - Displays scams reported in that location (list of scam cards).
 - Each card links to a **Scam Details Screen**.
-- ✅ **Purpose:** Check “What scams to expect in *X* place?”
+- **Purpose:** Check “What scams to expect in *X* place?”
 
 ---
 
@@ -33,7 +33,7 @@ Login/Signup is supported for personalization and bookmarking.
   - Location (text input or map select)  
   - Description  
 - Submit → stored in DB (after backend integration).
-- ✅ **Purpose:** Community-driven growth of scam database.
+- **Purpose:** Community-driven growth of scam database.
 
 ---
 
@@ -43,18 +43,18 @@ Login/Signup is supported for personalization and bookmarking.
   - Save their submitted scams.  
   - Bookmark scams to view later.  
   - Personalize scam alerts (push notifications).  
-- ✅ **Purpose:** Enable personalization and secure access.
+- **Purpose:** Enable personalization and secure access.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 **Frontend:** React Native (Expo), Context API/Zustand for state management, Tailwind for styling.  
 **Backend:** Node.js, Express, MongoDB, JWT Authentication.  
 **AI (future):** Scam text classification (categorize scam reports).  
 
 ---
 
-## 🚀 Roadmap
+## Roadmap
 - [ ] Setup React Native frontend (Expo).  
 - [ ] Build backend with Express + MongoDB.  
 - [ ] Implement authentication (Login/Signup).  
@@ -70,7 +70,7 @@ Since this project focuses mainly on frontend (React Native + Expo), Firebase el
 
 ---
 
-## 🔹 Firebase Services Used
+## Firebase Services Used
 
 ### 1. Authentication (Firebase Auth)
 - Handles **Login / Signup** flows.  
@@ -117,7 +117,7 @@ scams/
 
 ---
 
-## 🚀 Roadmap / Next Steps
+## Roadmap / Next Steps
 
 1. **Frontend Setup**
  - Install Expo & initialize project  
