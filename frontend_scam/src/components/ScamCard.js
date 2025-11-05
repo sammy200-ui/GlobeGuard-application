@@ -6,7 +6,7 @@ const ScamCard = ({ scam, onPress }) => {
   return (
     <TouchableOpacity style={styles.card} onPress={onPress}>
       <Text style={styles.title}>{scam.title}</Text>
-      <Text style={styles.location}>📍 {scam.location}</Text>
+      <Text style={styles.location}>{scam.location}</Text>
       <Text style={styles.description} numberOfLines={2}>{scam.description}</Text>
     </TouchableOpacity>
   );
