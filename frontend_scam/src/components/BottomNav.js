@@ -1,13 +1,11 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-// Bottom navigation bar that shows on all screens
 function BottomNav({ navigation, currentScreen }) {
 
   return (
     <View style={styles.bottomBar}>
       
-      {/* Home button */}
       <TouchableOpacity 
         style={styles.navButton}
         onPress={() => navigation.navigate('Home')}
@@ -17,7 +15,6 @@ function BottomNav({ navigation, currentScreen }) {
         </Text>
       </TouchableOpacity>
 
-      {/* Map button */}
       <TouchableOpacity 
         style={styles.navButton}
         onPress={() => navigation.navigate('Map')}
@@ -27,7 +24,6 @@ function BottomNav({ navigation, currentScreen }) {
         </Text>
       </TouchableOpacity>
 
-      {/* Report button */}
       <TouchableOpacity 
         style={styles.navButton}
         onPress={() => navigation.navigate('Report')}
@@ -37,7 +33,6 @@ function BottomNav({ navigation, currentScreen }) {
         </Text>
       </TouchableOpacity>
 
-      {/* Profile button */}
       <TouchableOpacity 
         style={styles.navButton}
         onPress={() => navigation.navigate('Profile')}
