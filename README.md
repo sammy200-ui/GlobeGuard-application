@@ -1,5 +1,9 @@
-
 ## GlobeGuard – Global Scam Awareness & Reporting App
+
+---
+
+## 📹 Demo Video
+**Watch the full app demonstration:** [GlobeGuard Demo Video](https://drive.google.com/file/d/17axn7JenUWlxKByobK-SK9ZxXpyhfh0B/view?usp=sharing)
 
 ---
 
