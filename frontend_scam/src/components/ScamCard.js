@@ -1,13 +1,40 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-// A simple card to show a scam item. Kept basic on purpose.
+const getTypeColor = (type) => {
+  switch (type) {
+    case 'Travel':
+      return '#10B981';
+    case 'Online':
+      return '#3B82F6';
+    case 'Financial':
+      return '#EF4444';
+    case 'Other':
+      return '#8B5CF6';
+    default:
+      return '#6B7280';
+  }
+};
+
 const ScamCard = ({ scam, onPress }) => {
   return (
     <TouchableOpacity style={styles.card} onPress={onPress}>
+      <View style={styles.headerRow}>
+        <View style={[styles.typeBadge, { backgroundColor: getTypeColor(scam.type) }]}>
+          <Text style={styles.typeText}>{scam.type}</Text>
+        </View>
+        {scam.upvotes && (
+          <Text style={styles.upvotes}>{scam.upvotes} reports</Text>
+        )}
+      </View>
+      
       <Text style={styles.title}>{scam.title}</Text>
       <Text style={styles.location}>{scam.location}</Text>
       <Text style={styles.description} numberOfLines={2}>{scam.description}</Text>
+      
+      {scam.date && (
+        <Text style={styles.date}>Reported: {scam.date}</Text>
+      )}
     </TouchableOpacity>
   );
 };
@@ -25,6 +52,27 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     elevation: 2,
   },
+  headerRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  typeBadge: {
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 12,
+  },
+  typeText: {
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  upvotes: {
+    fontSize: 12,
+    color: '#6B7280',
+    fontWeight: '500',
+  },
   title: {
     fontSize: 18,
     fontWeight: '600',
@@ -41,6 +89,11 @@ const styles = StyleSheet.create({
     color: '#4B5563',
     lineHeight: 20,
     marginBottom: 8,
+  },
+  date: {
+    fontSize: 12,
+    color: '#9CA3AF',
+    marginTop: 4,
   },
 });
 
