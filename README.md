@@ -1,66 +1,65 @@
-## GlobeGuard – Global Scam Awareness & Reporting App
+# GlobeGuard – Global Scam Awareness & Reporting App
 
----
+Map-based scam awareness and reporting platform. Protecting travelers and digital citizens from fraud through community-driven alerts.
 
 ## 📹 Demo Video
 **Watch the full app demonstration:** [GlobeGuard Demo Video](https://drive.google.com/file/d/17axn7JenUWlxKByobK-SK9ZxXpyhfh0B/view?usp=sharing)
 
----
+## Features
+- 📍 **Location-Based Alerts**: Real-time warnings when entering high-risk scam areas.
+- 📝 **Community Reporting**: Submit reports about new scams to warn others.
+- 🌐 **Online Safety**: Comprehensive database of digital and financial fraud tactics.
+- 🗺️ **Interactive Map**: Visualize scam hotspots globally.
+- 🔒 **Verification System**: Upvote system to validate community reports.
 
-## 2. Name & Roll Number
- Sameer Pawar – [2024-B-14082005]
+## Technology Stack
+- **Frontend**: React Native (Expo)
+- **Backend**: Node.js, Express
+- **Database**: MySQL (Prisma ORM)
+- **API**: Custom REST API
 
----
+## Getting Started
 
-## 3. Problem Statement
-Travelers and online users often fall victim to scams because they are unaware of common fraud tactics in different locations or platforms.  
-From taxi overcharging in tourist cities to phishing emails online, scams cause financial and emotional losses worldwide.  
-Currently, there is no centralized, user-friendly platform that provides **real-time scam alerts, verified scam histories, and community-reported fraud incidents**.
+### Prerequisites
+- Node.js
+- MySQL
 
----
+### Backend Setup
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up environment variables in `.env`:
+   ```
+   DATABASE_URL="mysql://root:password@localhost:3306/GlobeGuard"
+   PORT=3001
+   JWT_SECRET="your_secret_key"
+   ```
+4. Push database schema:
+    ```bash
+    npx prisma db push
+    ```
+5. Start the server:
+   ```bash
+   npm start
+   ```
 
-## 4. Proposed Solution / Idea
-A **mobile application** that helps users discover and avoid scams by:
-- Showing **location-based scam alerts** when traveling.
-- Providing **online scam warnings** for e-commerce, banking, and crypto frauds.
-- Allowing users to **report scams** they encounter and verify others' reports.
-- Integrating **official advisories** from trusted organizations and governments.
-
-This will create a **crowdsourced + verified scam database** accessible globally.
-
----
-
-## 5. Key Features
-- 📍 **Location-Based Scam Alerts** – See scams in your current or planned location.  
-- 🌐 **Online Scam Warnings** – Alerts for ongoing digital frauds.  
-- 📝 **User Reports & Verification** – Community-driven scam reporting and upvoting.  
-- 🗺️ **Map View of Scam Hotspots** – Visualize high-risk areas.  
-- 🔔 **Push Notifications** – Instant alerts when entering scam-prone areas.  
-- 📚 **Prevention Guides** – Tips to recognize and avoid specific scams.
-
----
-
-## 6. Target Users / Audience
-- International & domestic travelers.  
-- Online shoppers and Users.  
-- Tourists visiting unfamiliar cities.  
-- General public seeking scam awareness.
-
----
-
-## 7. Technology Stack
-**Frontend:** React Native (cross-platform mobile development)  
-**Backend:** Firebase / Supabase (database, authentication, push notifications)  
-**API Integrations:** Google Maps API, Reddit API, ScamAdviser API  
-**Other Tools:** Node.js (for serverless functions), GitHub (version control for up-to-date updates)
-
----
-
-## 8. Expected Outcome
-A fully functional **mobile app** that:
-- Shows **reliable scam alerts** based on location and category.
-- Allows **real-time community reporting** of scams.
-- Helps users **avoid financial losses** and stay safe while traveling or online.
-
----
-
+### Frontend Setup
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the application:
+   ```bash
+   npm start
+   ```
+   - Press `a` for Android emulator
+   - Press `i` for iOS simulator
